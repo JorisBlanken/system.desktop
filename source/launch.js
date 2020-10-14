@@ -1,4 +1,4 @@
-import { app, BrowserWindow, screen } from "electron";
+import { app, BrowserWindow, screen } from 'electron';
 
 app.whenReady().then(launch);
 
@@ -12,9 +12,10 @@ async function launch() {
         height: primary.bounds.height,
         show: false,
         frame: false,
-        focusable: false
+        focusable: false,
+        type: 'desktop'
     });
 
-    window.loadURL('file:///home/joris/source/desktop/index.html');
+    window.loadFile('./source/interface/desktop.html');
     window.once('ready-to-show', () => window.show());
 }

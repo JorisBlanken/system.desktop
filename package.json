@@ -1,0 +1,15 @@
+{
+  "name": "system.desktop",
+  "version": "0.0.1",
+  "main": "./source/main.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JorisBlanken/system.desktop.git"
+  },
+  "author": "Joris Blanken",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^10.1.3",
+    "esm": "^3.2.25"
+  }
+}
