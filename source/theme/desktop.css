@@ -1,6 +1,7 @@
 
 html {
     background-color: #543c7a;
+    user-select: none;
 }
 
 body {
