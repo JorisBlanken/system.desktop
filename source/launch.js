@@ -8,14 +8,14 @@ async function launch() {
     for (let display of displays) {
         let {x, y, width, height} = display.bounds;
         let settings = {
+            x, y, width, height,
             show: false,
             frame: false,
             focusable: false,
-            type: 'desktop',
-            title: 'desktop'
+            type: 'desktop'
         }
     
-        let window = new BrowserWindow({ ...settings, x, y, width, height });
+        let window = new BrowserWindow(settings);
     
         window.loadFile('./source/interface/desktop.html');
         window.once('ready-to-show', () => window.show());
